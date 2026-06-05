@@ -1,0 +1,68 @@
+{
+  "protocol": "loctree.context_atlas.v1",
+  "status": "atlas_ready",
+  "project": "/Users/maciejgad/vc-workspace/VetCoders/mcp-server-semgrep",
+  "snapshot": "main@0f0a074",
+  "generated_at": "2026-05-23T00:50:42.343179Z",
+  "atlas_dir": "/Users/maciejgad/vc-workspace/VetCoders/mcp-server-semgrep/.loctree/context-atlas",
+  "manifest": "/Users/maciejgad/vc-workspace/VetCoders/mcp-server-semgrep/.loctree/context-atlas/manifest.md",
+  "manifest_json": "/Users/maciejgad/vc-workspace/VetCoders/mcp-server-semgrep/.loctree/context-atlas/manifest.json",
+  "recommended_start": "/Users/maciejgad/vc-workspace/VetCoders/mcp-server-semgrep/.loctree/context-atlas/00-core-map.md",
+  "cards": [
+    {
+      "id": "core",
+      "title": "Core Map",
+      "path": "00-core-map.md",
+      "lines": 67,
+      "bytes": 1839,
+      "why": "Repo identity, current risk, authority labels, safe next commands.",
+      "saves_you_from": "wrong project state, stale assumptions, unsafe first actions"
+    },
+    {
+      "id": "structural",
+      "title": "Structural Map",
+      "path": "01-structural-map.md",
+      "lines": 20,
+      "bytes": 503,
+      "why": "Files, symbols, imports, consumers, entrypoints; read before edits/refactors.",
+      "saves_you_from": "missed consumers, wrong impact, blind dependency edits"
+    },
+    {
+      "id": "runtime",
+      "title": "Runtime Map",
+      "path": "02-runtime-map.md",
+      "lines": 22,
+      "bytes": 579,
+      "why": "Runtime behavior, framework hints, env contracts, reachability.",
+      "saves_you_from": "wrong tests, hidden runtime coupling, config mistakes"
+    },
+    {
+      "id": "memory",
+      "title": "Memory Trail",
+      "path": "03-memory-trail.md",
+      "lines": 17,
+      "bytes": 385,
+      "why": "Prior decisions, outcomes, tasks, and AICX continuity when available.",
+      "saves_you_from": "repeated work, forgotten decisions, reimplemented tasks"
+    },
+    {
+      "id": "verification",
+      "title": "Verification Gates",
+      "path": "04-verification-gates.md",
+      "lines": 33,
+      "bytes": 809,
+      "why": "Commands and likely tests most relevant to validate changes.",
+      "saves_you_from": "wrong validation path, skipped downstream checks, false confidence"
+    },
+    {
+      "id": "risk",
+      "title": "Risk Register",
+      "path": "05-risk-register.md",
+      "lines": 60,
+      "bytes": 1609,
+      "why": "Hotspots, cache/snapshot health, stale assumptions, next risk-reducing actions.",
+      "saves_you_from": "release blockers, high fan-in surprises, stale-cache decisions"
+    }
+  ],
+  "message": "This atlas contains the repo understanding an agent would otherwise rediscover manually. Start with manifest.md, then read the recommended cards; broad repo-level answers are incomplete until core, structural, and runtime are read."
+}
