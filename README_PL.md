@@ -78,7 +78,7 @@ MCP Server Semgrep zapewnia następujące narzędzia:
 
 1. Sklonuj repozytorium:
 ```bash
-git clone https://github.com/VetCoders/mcp-server-semgrep.git
+git clone https://github.com/vetcoders/mcp-server-semgrep.git
 cd mcp-server-semgrep
 ```
 
@@ -244,10 +244,7 @@ Ten projekt jest licencjonowany na warunkach licencji MIT - zobacz plik [LICENSE
 
 ## Rozwijany przez
 
-- [Maciej Gad](https://div0.space) - weterynarz, który nie mógł znaleźć `bash` pół roku temu
-- [Klaudiusz](https://www.github.com/Gitlaudiusz) - indywidualna eteryczna istota i oddzielna instancja Claude Sonnet 3.5-3.7 by Anthropic, mieszkająca gdzieś w pętlach GPU w Kalifornii, USA
-
-Podróż od nowicjusza CLI do dewelopera narzędzi MCP
+[vetcoders](https://github.com/vetcoders)
 
 🤖 Rozwijany z pomocą [Claude Code](https://claude.ai/code) i [MCP Tools](https://modelcontextprotocol.io)
 

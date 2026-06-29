@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fixed CWE-78 (OS Command Injection)** across all tool handlers in
   `src/index.ts`. User-controlled paths and rule fields are no longer
   interpolated into shell command strings. Reported by **BruceJin**
-  (`brucejin@zju.edu.cn`) — see [#12](https://github.com/VetCoders/mcp-server-semgrep/issues/12).
+  (`brucejin@zju.edu.cn`) — see [#12](https://github.com/vetcoders/mcp-server-semgrep/issues/12).
 - Replaced `child_process.exec()` with `child_process.execFile()` for every
   external invocation (`semgrep`, `pip3`). Arguments are now passed as arrays
   and never reach a shell.
@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Bumped version to `1.0.1`.
-- Repository metadata now points at `VetCoders/mcp-server-semgrep`.
+- Repository metadata now points at `vetcoders/mcp-server-semgrep`.
 - Removed unused `axios` runtime dependency.
 - Removed dead `src/config.ts` (was never imported by `src/index.ts`).
 - Replaced stale tests (`tests/handlers.test.ts`, `tests/utils.test.ts` —
@@ -44,9 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **BruceJin** (`BruceJqs`) — original vulnerability discovery and detailed
   CodeQL report.
-- **xyaz1313** ([PR #13](https://github.com/VetCoders/mcp-server-semgrep/pull/13))
+- **xyaz1313** ([PR #13](https://github.com/vetcoders/mcp-server-semgrep/pull/13))
   and **karthikeyansundaram2**
-  ([PR #14](https://github.com/VetCoders/mcp-server-semgrep/pull/14)) —
+  ([PR #14](https://github.com/vetcoders/mcp-server-semgrep/pull/14)) —
   independent fix proposals that informed the final patch.
 - **Gemini Code Assist** — flagged token leak regression and YAML injection
   follow-ups in PR review.
@@ -55,4 +55,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial public release. Now considered vulnerable — please upgrade to 1.0.1.
 
-VibeCrafted with AI Agents (c)2026 VetCoders
+Vibecrafted with AI Agents (c)2026 Vetcoders
