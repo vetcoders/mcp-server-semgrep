@@ -35,9 +35,14 @@ jobs:
         echo "python=$PYTHON" >> "$GITHUB_OUTPUT"
     - name: Install Semgrep
       run: |
-        "${{ steps.python.outputs.python }}" -m pip --version \
-          || "${{ steps.python.outputs.python }}" -m ensurepip --upgrade
-        "${{ steps.python.outputs.python }}" -m pip install --upgrade pip semgrep
+        # Install into a venv so PEP 668 externally-managed system Pythons on
+        # self-hosted runners don't reject the install (and we don't pollute
+        # the runner's system site-packages).
+        VENV="${RUNNER_TEMP:-/tmp}/semgrep-venv"
+        "${{ steps.python.outputs.python }}" -m venv "$VENV" \
+          || "${{ steps.python.outputs.python }}" -m ensurepip --upgrade && "${{ steps.python.outputs.python }}" -m venv "$VENV"
+        "$VENV/bin/python" -m pip install --upgrade pip semgrep
+        echo "$VENV/bin" >> "$GITHUB_PATH"
     - name: Run Semgrep
       env:
         SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
