@@ -13,3 +13,6 @@ semgrep_rules/
 /semgrep-rules
 /.vibecrafted
 *.out
+
+# Loctree internal artifacts (agent context atlas)
+.loctree/
