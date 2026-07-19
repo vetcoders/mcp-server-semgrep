@@ -5,7 +5,7 @@ Thank you for considering contributing to mcp-server-semgrep! This guide will he
 ## Development Setup
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/Szowesgad/mcp-server-semgrep.git`
+2. Clone your fork: `git clone https://github.com/vetcoders/mcp-server-semgrep.git`
 3. Install dependencies: `pnpm install`
 4. Make sure you have Python and pip3 installed (required for Semgrep)
 
