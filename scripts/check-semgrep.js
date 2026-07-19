@@ -5,7 +5,7 @@
  * It runs on postinstall and helps users get semgrep working
  */
 
-import { execSync } from 'child_process';
+import { execFileSync } from 'child_process';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import { fileURLToPath } from 'url';
@@ -75,7 +75,7 @@ async function findSemgrep() {
 
     // Last resort: try to run semgrep directly
     try {
-      execSync('semgrep --version', { stdio: 'ignore' });
+      execFileSync('semgrep', ['--version'], { stdio: 'ignore' });
       return 'semgrep'; // Available in PATH but not found by which
     } catch (error) {
       // Not found
@@ -90,7 +90,7 @@ async function findSemgrep() {
 
 async function checkSemgrepVersion(semgrepPath) {
   try {
-    const output = execSync(`"${semgrepPath}" --version`, { encoding: 'utf8' }).trim();
+    const output = execFileSync(semgrepPath, ['--version'], { encoding: 'utf8' }).trim();
     return output;
   } catch (error) {
     console.error('Error checking semgrep version:', error.message);

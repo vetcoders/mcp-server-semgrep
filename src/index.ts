@@ -572,7 +572,12 @@ semgrep scan --config=p/ci`;
       }
 
       if (args.path_pattern) {
-        const pathRegex = new RegExp(args.path_pattern);
+        let pathRegex: RegExp;
+        try {
+          pathRegex = new RegExp(args.path_pattern);
+        } catch {
+          throw new McpError(ErrorCode.InvalidParams, 'path_pattern is not a valid regular expression');
+        }
         filteredResults = filteredResults.filter(
           (finding: any) => pathRegex.test(finding.path)
         );
@@ -585,7 +590,12 @@ semgrep scan --config=p/ci`;
       }
 
       if (args.message_pattern) {
-        const messageRegex = new RegExp(args.message_pattern);
+        let messageRegex: RegExp;
+        try {
+          messageRegex = new RegExp(args.message_pattern);
+        } catch {
+          throw new McpError(ErrorCode.InvalidParams, 'message_pattern is not a valid regular expression');
+        }
         filteredResults = filteredResults.filter(
           (finding: any) => messageRegex.test(finding.extra?.message ?? '')
         );
