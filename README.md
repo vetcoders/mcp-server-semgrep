@@ -1,12 +1,12 @@
 # MCP Server Semgrep
-[![smithery badge](https://smithery.ai/badge/@VetCoders/mcp-server-semgrep)](https://smithery.ai/server/@VetCoders/mcp-server-semgrep)
-[![mcp-server-semgrep MCP server](https://glama.ai/mcp/servers/VetCoders/mcp-server-semgrep/badges/card.svg)](https://glama.ai/mcp/servers/VetCoders/mcp-server-semgrep)
+[![smithery badge](https://smithery.ai/badge/@vetcoders/mcp-server-semgrep)](https://smithery.ai/server/@vetcoders/mcp-server-semgrep)
+[![mcp-server-semgrep MCP server](https://glama.ai/mcp/servers/vetcoders/mcp-server-semgrep/badges/card.svg)](https://glama.ai/mcp/servers/vetcoders/mcp-server-semgrep)
 ### POWERED BY:
 [![POWERED BY](https://semgrep.dev/docs/img/semgrep-icon-text-horizontal.svg)](https://semgrep.dev)
 
 
 ## About the Project
-[![MCP Server Semgrep Logo](./logo.svg)](https://github.com/VetCoders/mcp-server-semgrep)
+[![MCP Server Semgrep Logo](./logo.svg)](https://github.com/vetcoders/mcp-server-semgrep)
 This project was initially inspired by robustness of [Semgrep tool](https://semgrep.dev), [The Replit Team](https://github.com/replit) and their [Agent V2](https://replit.com), as well as the implementation by [stefanskiasan/semgrep-mcp-server](https://github.com/stefanskiasan/semgrep-mcp-server), but has evolved with significant architectural changes for enhanced and easier installation and maintenance.
 
 MCP Server Semgrep is a [Model Context Protocol](https://modelcontextprotocol.io) compliant server that integrates the powerful Semgrep static analysis tool with AI assistants like Anthropic Claude. It enables advanced code analysis, security vulnerability detection, and code quality improvements directly through a conversational interface.
@@ -81,7 +81,7 @@ Semgrep MCP Server provides the following tools:
 
 The easiest way to install and use MCP Server Semgrep is through Smithery.ai:
 
-1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@VetCoders/mcp-server-semgrep)
+1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@vetcoders/mcp-server-semgrep)
 2. Follow the installation instructions to add it to your MCP-compatible clients
 3. Configure any optional settings like the Semgrep API token and allowed workspace roots
 
@@ -101,26 +101,26 @@ yarn global add mcp-server-semgrep
 ```
 
 The package is also available on other registries:
-- [MCP.so](https://mcp.so/@VetCoders/mcp-server-semgrep)
+- [MCP.so](https://mcp.so/@vetcoders/mcp-server-semgrep)
 
 ### Option 3: Install from GitHub
 
 ```bash
 # Using npm
-npm install -g git+https://github.com/VetCoders/mcp-server-semgrep.git
+npm install -g git+https://github.com/vetcoders/mcp-server-semgrep.git
 
 # Using pnpm
-pnpm add -g git+https://github.com/VetCoders/mcp-server-semgrep.git
+pnpm add -g git+https://github.com/vetcoders/mcp-server-semgrep.git
 
 # Using yarn
-yarn global add git+https://github.com/VetCoders/mcp-server-semgrep.git
+yarn global add git+https://github.com/vetcoders/mcp-server-semgrep.git
 ```
 
 ### Option 4: Local Development Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/VetCoders/mcp-server-semgrep.git
+git clone https://github.com/vetcoders/mcp-server-semgrep.git
 cd mcp-server-semgrep
 ```
 
@@ -210,7 +210,7 @@ There are two ways to integrate MCP Server Semgrep with Claude Desktop:
 
 ### Method 1: Install via Smithery.ai (Recommended)
 
-1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@VetCoders/mcp-server-semgrep)
+1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@vetcoders/mcp-server-semgrep)
 2. Click "Install in Claude Desktop"
 3. Follow the on-screen instructions
 
@@ -332,12 +332,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Developed by
 
-- [Maciej Gad](https://div0.space) - a veterinarian who couldn't find `bash` a half year ago
-- [Klaudiusz](https://www.github.com/Gitlaudiusz) - the individual ethereal being, and separate instance of Claude Sonnet 3.5-3.7 by Anthropic living somewhere in the GPU's loops in California, USA
+[vetcoders](https://github.com/vetcoders)
 
-The journey from CLI novice to MCP tool developer
-
-🤖 Developed with the ultimate help of [Claude Code](https://claude.ai/code) and [MCP Tools](https://modelcontextprotocol.io)
+🤖 Developed with the help of [Claude Code](https://claude.ai/code) and [MCP Tools](https://modelcontextprotocol.io)
 
 ## Acknowledgements
 

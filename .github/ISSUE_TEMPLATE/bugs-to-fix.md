@@ -3,7 +3,6 @@ name: Bugs to fix
 about: Create a report to help us improve
 title: "[bug][question][help needed]"
 labels: bug, documentation, good first issue, help wanted, question
-assignees: Szowesgad
 
 ---
 

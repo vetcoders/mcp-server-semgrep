@@ -14,8 +14,8 @@ We appreciate responsible disclosure. Please report security issues privately
 through one of the following channels:
 
 - **GitHub Security Advisory** (preferred):
-  <https://github.com/VetCoders/mcp-server-semgrep/security/advisories/new>
-- Email: `void@div0.space`
+  <https://github.com/vetcoders/mcp-server-semgrep/security/advisories/new>
+- Email: `hello@vetcoders.io`
 
 Please include:
 - A clear description of the issue

@@ -42,14 +42,14 @@
     "anthropic",
     "vetcoders"
   ],
-  "author": "VetCoders <void@div0.space>",
-  "homepage": "https://github.com/VetCoders/mcp-server-semgrep",
+  "author": "vetcoders <hello@vetcoders.io>",
+  "homepage": "https://github.com/vetcoders/mcp-server-semgrep",
   "bugs": {
-    "url": "https://github.com/VetCoders/mcp-server-semgrep/issues"
+    "url": "https://github.com/vetcoders/mcp-server-semgrep/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VetCoders/mcp-server-semgrep.git"
+    "url": "git+https://github.com/vetcoders/mcp-server-semgrep.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -84,10 +84,10 @@
   "packageManager": "pnpm@8.0.0",
   "funding": {
     "type": "individual",
-    "url": "https://div0.space"
+    "url": "https://vetcoders.io"
   },
   "vetcoders": {
-    "smithery": "https://smithery.ai/server/@VetCoders/mcp-server-semgrep",
-    "mcp": "https://mcp.so/@VetCoders/mcp-server-semgrep"
+    "smithery": "https://smithery.ai/server/@vetcoders/mcp-server-semgrep",
+    "mcp": "https://mcp.so/@vetcoders/mcp-server-semgrep"
   }
 }

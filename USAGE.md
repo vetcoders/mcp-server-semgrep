@@ -10,7 +10,7 @@ First, make sure you have Node.js (v18+) installed. The server offers multiple w
 
 The simplest way to install and use MCP Server Semgrep is directly through Smithery.ai:
 
-1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@VetCoders/mcp-server-semgrep)
+1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@vetcoders/mcp-server-semgrep)
 2. Click the "Install" button for your preferred MCP client
 3. Follow the on-screen instructions to complete the installation
 
@@ -33,7 +33,7 @@ yarn global add mcp-server-semgrep
 
 ```bash
 # Install directly from GitHub repository
-npm install -g git+https://github.com/VetCoders/mcp-server-semgrep.git
+npm install -g git+https://github.com/vetcoders/mcp-server-semgrep.git
 ```
 
 ### Semgrep Installation Options:
@@ -377,7 +377,7 @@ There are two ways to integrate with Claude Desktop:
 
 ### Method 1: Install via Smithery.ai (Recommended)
 
-1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@VetCoders/mcp-server-semgrep)
+1. Visit [MCP Server Semgrep on Smithery.ai](https://smithery.ai/server/@vetcoders/mcp-server-semgrep)
 2. Click "Install in Claude Desktop"
 3. Follow the on-screen instructions to complete the setup
 4. Launch Claude Desktop and the server will be available automatically
