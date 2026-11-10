@@ -14,7 +14,9 @@ name: Semgrep
 jobs:
   semgrep:
     name: semgrep/ci
-    runs-on: self-hosted
+    # Self-hosted runners are persistent machines, so code from a fork must not
+    # run on them: fork pull requests go to a GitHub-hosted runner instead.
+    runs-on: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository && 'ubuntu-latest' || 'self-hosted' }}
     permissions:
       contents: read
     steps:
